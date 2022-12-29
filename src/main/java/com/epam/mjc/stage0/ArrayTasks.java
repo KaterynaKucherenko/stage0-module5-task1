@@ -60,15 +60,16 @@ public class ArrayTasks {
      * arr = [5, -3, -4],   number = 10    ->  -1
      */
     public int findIndexOfNumber(int[] arr, int number) {
+           int x = 0;
            int a = 0;
 	    for (int i=0; i< arr.length; i++ ){
 	        if (number == arr[i]){
-	             return i;}
+	               x = i+1;}
 	             else{ a++;
 	            }
 	            if (a==arr.length){
-	                return (-1);}
-	            }
+	                 x =-1;}
+	            } return x;
     }
 
     /**
